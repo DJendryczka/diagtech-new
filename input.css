@@ -12,3 +12,6 @@ html{
 .nav-active{
     left: 0;
 }
+.nav-white{
+    background-color: azure;
+}

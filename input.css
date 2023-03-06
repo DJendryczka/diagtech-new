@@ -15,3 +15,6 @@ html{
 .card-img{
     background-image: url('./images/about-img.jpg');
 }
+.services-img{
+    background-image: url('./images/services3.jpg');
+}

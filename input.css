@@ -18,3 +18,8 @@ html{
 .services-img{
     background-image: url('./images/services3.jpg');
 }
+/* @media screen and (max-width: 1024px)  {
+    .services-img{
+        background-image: none;
+    }
+} */

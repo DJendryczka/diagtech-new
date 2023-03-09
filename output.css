@@ -1893,6 +1893,11 @@ video {
   padding-right: 1rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1906,6 +1911,16 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .text-left {
@@ -2584,20 +2599,12 @@ html{
     display: flex;
   }
 
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
-  .lg\:h-\[\] {
-    height: ;
-  }
-
-  .lg\:h-\[400\] {
-    height: 400;
-  }
-
   .lg\:h-\[400px\] {
     height: 400px;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:grid-cols-4 {

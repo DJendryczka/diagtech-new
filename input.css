@@ -2,22 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
-.custom-img{
-    background-image: url('./images/splach.jpg');
-   
+.custom-img {
+  background-image: url("./images/splach.jpg");
 }
-.nav-active{
-    left: 0;
+.nav-active {
+  left: 0;
 }
-.card-img{
-    background-image: url('./images/about-img.jpg');
+.card-img {
+  background-image: url("./images/about-img.jpg");
 }
-.services-img{
-    background-image: url('./images/services3.jpg');
+.services-img {
+  background-image: url("./images/services3.jpg");
 }
 /* @media screen and (max-width: 1024px)  {
     .services-img{

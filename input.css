@@ -7,7 +7,7 @@ html {
   font-family: "Poppins", sans-serif;
 }
 .custom-img {
-  background-color: rgba(0, 0, 0, 0.478);
+  background-color: rgba(0, 0, 0, 0.615);
   background-image: url("./images/splach.jpg");
   background-blend-mode: multiply;
 }

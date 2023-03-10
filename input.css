@@ -8,6 +8,7 @@ html{
 }
 .custom-img{
     background-image: url('./images/splach.jpg');
+   
 }
 .nav-active{
     left: 0;

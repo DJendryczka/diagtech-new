@@ -4,17 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Required Core Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
-    />
-
-    <!-- Optional Theme Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
-    />
     <title>DiagTech-Web</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -208,8 +197,37 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="w-full h-full sm:h-screen  bg-rose-50 flex justify-center items-center">
-      
+    <section
+      id="projects"
+      class="w-full h-screen bg-white flex flex-col justify-center items-center"
+    >
+      <h2 class=" uppercase md:text-xl font-bold text-gray-600 p-2">urval kunder som har använd oss</h2>
+      <div class="carousel max-w-[1240px] shadow-2xl">
+        <div class="carousel-item carousel-item-visible">
+          <img src="images/Bella.jpg" alt="" />
+          <div class="carousel-text">
+            <a href="https://bellasdad.se"><h1 class=" bg-black/20  px-4 py-2 rounded-lg">Besök sidan</h1></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/skanor.jpg" alt="" />
+          <div class="carousel-text">
+            <a href="https://skanorsservice.se"><h1 class=" bg-black/20  px-4 py-2 rounded-lg">Besök sidan</h1></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/keto.jpg" alt="" />
+          <div class="carousel-text">
+            <h1 class=" bg-black/20  px-4 py-2 rounded-lg">Besök sidan</h1>
+          </div>
+        </div>
+        <div class="carousel-actions">
+          <button id="carousel-button-prev" aria-label="Previous slide">
+            <
+          </button>
+          <button id="carousel-button-next" aria-label="Next slide">></button>
+        </div>
+      </div>
     </section>
     <footer
       class="sm:flex max-w-[1240px] mx-auto items-center justify-around h-20"
@@ -274,7 +292,4 @@
     </footer>
     <script src="script.js"></script>
   </body>
-  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-
-
 </html>

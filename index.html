@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required Core Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
     <title>DiagTech-Web</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,13 +33,33 @@
         class="text-gray-300 flex max-w-[1240px] m-auto justify-between items-center p-6"
         id="nav-text"
       >
-        <div class="font-bold text-xl">DiagTech-Webb</div>
+        <div class="font-bold text-xl underline">DiagTech</div>
         <ul class="hidden sm:flex justify-around items-center">
-          <li class="mx-2 uppercase"><a href="#">hem</a></li>
-          <li class="mx-2 uppercase"><a href="#about">om oss</a></li>
-          <li class="mx-2 uppercase"><a href="#services">Tjänster</a></li>
-          <li class="mx-2 uppercase"><a href="#projects">Portfolio</a></li>
-          <li class="mx-2 uppercase"><a href="#contact">Kontakt</a></li>
+          <li
+            class="mx-2 uppercase hover:text-orange-500 hover:text-lg ease-in duration-300"
+          >
+            <a href="#">hem</a>
+          </li>
+          <li
+            class="mx-2 uppercase hover:text-orange-500 hover:text-lg ease-in duration-300"
+          >
+            <a href="#about">om oss</a>
+          </li>
+          <li
+            class="mx-2 uppercase hover:text-orange-500 hover:text-lg ease-in duration-300"
+          >
+            <a href="#services">Tjänster</a>
+          </li>
+          <li
+            class="mx-2 uppercase hover:text-orange-500 hover:text-lg ease-in duration-300"
+          >
+            <a href="#projects">Portfolio</a>
+          </li>
+          <li
+            class="mx-2 uppercase hover:text-orange-500 hover:text-lg ease-in duration-300"
+          >
+            <a href="#contact">Kontakt</a>
+          </li>
         </ul>
         <!--Mobile menu-->
         <div class="block sm:hidden z-10 cursor-pointer" id="menu-button">
@@ -57,27 +88,27 @@
             <li
               class="p-4 text-4xl hover:text-gray-500 cursor-pointer uppercase"
             >
-            <a href="#">hem</a>
+              <a href="#">hem</a>
             </li>
             <li
               class="p-4 text-4xl hover:text-gray-500 cursor-pointer uppercase"
             >
-            <a href="#about">om oss</a>
+              <a href="#about">om oss</a>
             </li>
             <li
               class="p-4 text-4xl hover:text-gray-500 cursor-pointer uppercase"
             >
-            <a href="#services">Tjänster</a>
+              <a href="#services">Tjänster</a>
             </li>
             <li
               class="p-4 text-4xl hover:text-gray-500 cursor-pointer uppercase"
             >
-            <a href="#projects">Portfolio</a>
+              <a href="#projects">Portfolio</a>
             </li>
             <li
               class="p-4 text-4xl hover:text-gray-500 cursor-pointer uppercase"
             >
-            <a href="#contact">Kontakt</a>
+              <a href="#contact">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -87,7 +118,7 @@
       class="flex items-center justify-center h-screen md:bg-fixed bg-center bg-cover custom-img w-full"
     >
       <div
-        class="p-5 text-white z-[2] ml-[-1rem] mt-[12rem] sm:ml-[-9rem] md:ml-[-18rem] "
+        class="p-5 text-white z-[2] ml-[-1rem] mt-[12rem] sm:ml-[-9rem] md:ml-[-18rem]"
       >
         <h1 class="text-5xl sm:text-7xl font-bold p-1">DiagTech</h1>
         <h2 class="py-5 text-2xl p-1">Webbutveckling</h2>
@@ -101,15 +132,13 @@
     >
       <div class="w-[1240px] shadow-2xl bg-fuchsia-50 sm:m-2">
         <div class="w-full h-[300px] bg-center bg-cover card-img"></div>
-        <div class=" sm:p-20 text-gray-700">
-          <h2 class=" p-4 text-3xl font-bold uppercase ">
-            Vilka är vi.
-          </h2>
+        <div class="sm:p-20 text-gray-700">
+          <h2 class="p-4 text-3xl font-bold uppercase">Vilka är vi.</h2>
           <p class="p-6">
             DiagTech-Webbutveckling är ett ny startad företag av personer som
-            brinner för att skapa nya lösningar som hjälper individer eller företag att
-            lösa deras problem på det digitala planen. Vi älskar att skapa en
-            User vänlig Design, samt funktonella Appar eller Hemsidor.
+            brinner för att skapa nya lösningar som hjälper individer eller
+            företag att lösa deras problem på det digitala planen. Vi älskar att
+            skapa en User vänlig Design, samt funktonella Appar eller Hemsidor.
           </p>
         </div>
       </div>
@@ -119,50 +148,69 @@
       class="w-full h-full lg:h-screen flex justify-center items-center bg-center md:bg-fixed bg-cover services-img"
     >
       <div
-        class="w-[1240px] h-auto lg:h-[400px] shadow-2xl flex flex-col text-white  mt-36"
+        class="w-[1240px] h-auto lg:h-[400px] shadow-2xl flex flex-col text-white mt-36"
       >
         <div class="w-full lg:flex justify-evenly items-center">
           <button
-            id="btn" class=" hover:bg-black/50 ease-in duration-300 w-full sm:h-34 cursor-pointer active:bg-black/60 focus:bg-black/40"
+            id="btn"
+            class="hover:bg-black/50 ease-in duration-300 w-full sm:h-34 cursor-pointer active:bg-black/60 focus:bg-black/40"
           >
             <h2 class="p-4 sm:p-6 sm:mt-4">Webbutveckling</h2>
           </button>
           <button
-            id="btn" class=" hover:bg-black/50 ease-in duration-300 w-full sm:h-34 cursor-pointer active:bg-black/60 focus:bg-black/40"
+            id="btn"
+            class="hover:bg-black/50 ease-in duration-300 w-full sm:h-34 cursor-pointer active:bg-black/60 focus:bg-black/40"
           >
             <h2 class="p-4 sm:p-6 sm:mt-4">Design & UX</h2>
           </button>
           <button
-            id="btn" class=" hover:bg-black/50 ease-in duration-300 w-full sm:h-34 cursor-pointer active:bg-black/60 focus:bg-black/40"
+            id="btn"
+            class="hover:bg-black/50 ease-in duration-300 w-full sm:h-34 cursor-pointer active:bg-black/60 focus:bg-black/40"
           >
             <h2 class="p-4 sm:p-6 sm:mt-4">Hosting & förvaltning</h2>
           </button>
           <button
-            id="btn" class=" hover:bg-black/50 ease-in duration-300 w-full sm:h-34 cursor-pointer active:bg-black/60 focus:bg-black/40"
+            id="btn"
+            class="hover:bg-black/50 ease-in duration-300 w-full sm:h-34 cursor-pointer active:bg-black/60 focus:bg-black/40"
           >
             <h2 class="p-4 sm:p-6 sm:mt-4">SEO Marknadsföring</h2>
           </button>
         </div>
         <div class=" ">
-          <p id="info" class=" text-center text-2xl py-16 px-4 ">Våra medarbetare på DiagTech kan hjäpla dig med ovanstående tjänster.</p>
-          <div id="design" class=" hidden">
-            <p class=" text-center py-6 px-4 text-xl  ">På design och UX avdelningen använder vi oss av Figma och Ilustrator</p>
+          <p id="info" class="text-center text-2xl py-16 px-4">
+            Våra medarbetare på DiagTech kan hjäpla dig med ovanstående
+            tjänster.
+          </p>
+          <div id="design" class="hidden">
+            <p class="text-center py-6 px-4 text-xl">
+              På design och UX avdelningen använder vi oss av Figma och
+              Ilustrator
+            </p>
           </div>
-          <div id="hosting" class=" hidden">
-            <p class=" text-center py-6 px-4 text-xl  ">På Hosting avdelningen hjälper vi dig med webbhotel förvaltning och service.</p>
+          <div id="hosting" class="hidden">
+            <p class="text-center py-6 px-4 text-xl">
+              På Hosting avdelningen hjälper vi dig med webbhotel förvaltning
+              och service.
+            </p>
           </div>
-          <div id="ceo" class=" hidden">
-            <p class=" text-center py-6 px-4  text-xl ">På CEO avdelningen optimerar vi din sida så att den hamnar högst i sökningar</p>
+          <div id="ceo" class="hidden">
+            <p class="text-center py-6 px-4 text-xl">
+              På CEO avdelningen optimerar vi din sida så att den hamnar högst i
+              sökningar
+            </p>
           </div>
-          <div id="webb" class=" hidden">
-            <p class="text-center p-4 text-xl">Vi använder nädanstående verktyg för att bygga hemsida eller webb app</p>
-          
+          <div id="webb" class="hidden">
+            <p class="text-center p-4 text-xl">
+              Vi använder nädanstående verktyg för att bygga hemsida eller webb
+              app
+            </p>
+          </div>
         </div>
-        </div>
-        
       </div>
     </section>
-    <section id="projects" class="max-w-[1240px] h-screen"></section>
+    <section id="projects" class="w-full h-full sm:h-screen  bg-rose-50 flex justify-center items-center">
+      
+    </section>
     <footer
       class="sm:flex max-w-[1240px] mx-auto items-center justify-around h-20"
     >
@@ -226,4 +274,7 @@
     </footer>
     <script src="script.js"></script>
   </body>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+
 </html>

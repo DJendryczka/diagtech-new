@@ -19,7 +19,7 @@ html {
 }
 .services-img {
   background-image: url("./images/services2.jpg");
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply;
 }
 

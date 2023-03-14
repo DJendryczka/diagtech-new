@@ -29,85 +29,85 @@ window.addEventListener('scroll', navChangeColor)
 
 navSlide()
 
-const servicesInfoToggler = () => {
-  const info = document.getElementById('info');
-  const webb = document.getElementById('webb');
-  const design = document.getElementById('design');
-  const hosting = document.getElementById('hosting');
-  const ceo = document.getElementById('ceo');
-  const buttons = document.querySelectorAll("#btn");
-
-  const toggleVisibility = (show, hide1, hide2, hide3, hide4) => {
-    show.classList.remove('hidden');
-    hide1.classList.add('hidden');
-    hide2.classList.add('hidden');
-    hide3.classList.add('hidden');
-    hide4.classList.add('hidden');
-  }
-
-  buttons.forEach(button => {
-    button.addEventListener("click", (e) => {
-      console.log("Button " + button.innerText + " was clicked");
-      switch (button.innerText) {
-        case 'Webbutveckling':
-          toggleVisibility(webb, info, design, hosting, ceo);
-          break;
-        case 'Design & UX':
-          toggleVisibility(design, info, webb, hosting, ceo);
-          break;
-        case 'Hosting & förvaltning':
-          toggleVisibility(hosting, info, webb, design, ceo);
-          break;
-        default:
-          toggleVisibility(ceo, info, webb, design, hosting);
-          break;
-      }
-    });
-  });
-}
-
-servicesInfoToggler();
-
-
 // const servicesInfoToggler = () => {
-//   const info = document.getElementById('info')
-//   const webb = document.getElementById('webb')
-//   const design = document.getElementById('design')
-//   const hosting = document.getElementById('hosting')
-//   const ceo = document.getElementById('ceo')
-//   const button = document.querySelectorAll("#btn");
-//   for (let i = 0; i < button.length; i++) {
-//     button[i].addEventListener("click", (e) => {
-//       console.log("Button " + (i) + " was clicked");
-//       if(e.target.outerText === 'Webbutveckling'){
-//         info.classList.add('hidden')
-//         webb.classList.remove('hidden')
-//         design.classList.add('hidden')
-//         hosting.classList.add('hidden')
-//         ceo.classList.add('hidden')
-//       }else if(e.target.outerText === 'Design & UX'){
-//         info.classList.add('hidden')
-//         design.classList.remove('hidden')
-//         webb.classList.add('hidden')
-//         hosting.classList.add('hidden')
-//         ceo.classList.add('hidden')
-//       }else if(e.target.outerText === 'Hosting & förvaltning'){
-//         info.classList.add('hidden')
-//         design.classList.add('hidden')
-//         webb.classList.add('hidden')
-//         hosting.classList.remove('hidden')
-//         ceo.classList.add('hidden')
-//       }else{
-//         info.classList.add('hidden')
-//         design.classList.add('hidden')
-//         webb.classList.add('hidden')
-//         ceo.classList.remove('hidden')
-//         hosting.classList.add('hidden')
+//   const info = document.getElementById('info');
+//   const webb = document.getElementById('webb');
+//   const design = document.getElementById('design');
+//   const hosting = document.getElementById('hosting');
+//   const ceo = document.getElementById('ceo');
+//   const buttons = document.querySelectorAll("#btn");
+
+//   const toggleVisibility = (show, hide1, hide2, hide3, hide4) => {
+//     show.classList.remove('hidden');
+//     hide1.classList.add('hidden');
+//     hide2.classList.add('hidden');
+//     hide3.classList.add('hidden');
+//     hide4.classList.add('hidden');
+//   }
+
+//   buttons.forEach(button => {
+//     button.addEventListener("click", (e) => {
+//       console.log("Button " + button.innerText + " was clicked");
+//       switch (button.innerText) {
+//         case 'Webbutveckling':
+//           toggleVisibility(webb, info, design, hosting, ceo);
+//           break;
+//         case 'Design & UX':
+//           toggleVisibility(design, info, webb, hosting, ceo);
+//           break;
+//         case 'Hosting & förvaltning':
+//           toggleVisibility(hosting, info, webb, design, ceo);
+//           break;
+//         default:
+//           toggleVisibility(ceo, info, webb, design, hosting);
+//           break;
 //       }
 //     });
-//   }
+//   });
 // }
-// servicesInfoToggler()
+
+// servicesInfoToggler();
+
+
+const servicesInfoToggler = () => {
+  const info = document.getElementById('info')
+  const webb = document.getElementById('webb')
+  const design = document.getElementById('design')
+  const hosting = document.getElementById('hosting')
+  const ceo = document.getElementById('ceo')
+  const button = document.querySelectorAll("#btn");
+  for (let i = 0; i < button.length; i++) {
+    button[i].addEventListener("click", (e) => {
+      console.log("Button " + (i) + " was clicked");
+      if(e.target.outerText === 'Webbutveckling'){
+        info.classList.add('hidden')
+        webb.classList.remove('hidden')
+        design.classList.add('hidden')
+        hosting.classList.add('hidden')
+        ceo.classList.add('hidden')
+      }else if(e.target.outerText === 'Design & UX'){
+        info.classList.add('hidden')
+        design.classList.remove('hidden')
+        webb.classList.add('hidden')
+        hosting.classList.add('hidden')
+        ceo.classList.add('hidden')
+      }else if(e.target.outerText === 'Hosting & förvaltning'){
+        info.classList.add('hidden')
+        design.classList.add('hidden')
+        webb.classList.add('hidden')
+        hosting.classList.remove('hidden')
+        ceo.classList.add('hidden')
+      }else{
+        info.classList.add('hidden')
+        design.classList.add('hidden')
+        webb.classList.add('hidden')
+        ceo.classList.remove('hidden')
+        hosting.classList.add('hidden')
+      }
+    });
+  }
+}
+servicesInfoToggler()
 
 const slides = document.getElementsByClassName('carousel-item');
 let slidePosition = 0;
